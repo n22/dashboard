@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body class="nav-fixed">
+        <%- include('partials/nav-head') %>
+        <div id="layoutSidenav">
+            <%- include('partials/sidenav') %>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="page-header page-header-light bg-white shadow">
+                        <div class="container-fluid">
+                            <div class="page-header-content py-5">
+                                <h1 class="page-header-title">
+                                    <div class="page-header-icon"><i data-feather="layout"></i></div>
+                                    <span>Ubah Pengiriman</span>
+                                </h1>
+                                <!-- <div class="page-header-subtitle"></div> -->
+                                <!-- <ol class="breadcrumb mt-4 mb-0">
+                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Light Header</li>
+                                </ol> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-4">
+                        <div class="card mb-4">
+                            <div class="card-header">Pengiriman</div>
+                            <div class="card-body">
+                                <div class="form-group"><label for="exampleFormControlInput1">Airwaybill</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                <div class="form-group"><label for="exampleFormControlInput1">Nama Pengirim</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">Informasi titik pengambilan</div>
+                            <div class="card-body">
+                                <div class="sbp-preview mb-4">
+                                    <div class="sbp-preview-content">
+                                        <div class="form-group"><label for="exampleFormControlInput1">Nama</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Alamat</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Nama PIC</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Jam Pengambilan</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="08:00" /></div>
+
+                                        <div class="form-group"><label for="exampleFormControlInput1">No telp</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                    </div>
+                                    <!-- <h6 class="small text-muted font-weight-500">Barang</h6> -->
+
+                                    <div class="sbp-preview-text">
+                                        <div class="alert alert-dark" role="alert">
+                                            <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">x</span>
+                                            </button>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Nama Produk</label><input class="form-control" id="exampleFormControlInput1" type="phone" placeholder="Asep" /></div>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Deskripsi Produk</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Jl.Sukabumi no 3, Sukabumi" /></div>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Jumlah Produk</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="1 roll" /></div>                                    
+                                        </div>
+                                  
+                                        <div class="alert alert-dark" role="alert">
+                                            <button class="close" type="button" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">x</span>
+                                            </button>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Nama Produk</label><input class="form-control" id="exampleFormControlInput1" type="phone" placeholder="Asep" /></div>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Deskripsi Produk</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Jl.Sukabumi no 3, Sukabumi" /></div>
+                                            <div class="form-group"><label for="exampleFormControlInput1">Jumlah Produk</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="1 roll" /></div>                                    
+                                        </div>
+                                        <button class="btn btn-success btn-sm" type="button">Tambah Produk</button>
+                                    </div>
+                                </div>
+                                <div class="sbp-preview-content">
+                                    <button class="btn btn-success btn-sm" type="button">Tambah titik pengambilan</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header">Informasi Penerima</div>
+                            <div class="card-body">
+                                <div class="form-group"><label for="exampleFormControlInput1">Nama Penerima</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                <div class="form-group"><label for="exampleFormControlInput1">Alamat</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                                <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                                <div class="form-group"><label for="exampleFormControlInput1">No telp</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                            </div>
+                        </div>
+                        <a class="btn btn-success btn-sm" type="button" href="/deliveries"  >Buat pengiriman</a>
+                    </div>
+                </main>
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; CGX 2020</div>
+    
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    </body>
+</html>

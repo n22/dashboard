@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body class="nav-fixed">
+        <%- include('partials/nav-head') %>
+        <div id="layoutSidenav">
+            <%- include('partials/sidenav') %>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid mt-5">
+                        <div class="d-flex justify-content-between align-items-sm-center flex-column flex-sm-row mb-4">
+                            <div class="mr-4 mb-3 mb-sm-0">
+                                <h1 class="mb-0">Add User</h1>
+                                <button class="btn btn-light btn-sm" type="button"><i data-feather="chevron-left"></i>Back</button>                        
+
+                            </div> 
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <form action="">
+                                    <form>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Name</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="adam smith" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Position</label><input class="form-control form-control-sm " id="exampleFormControlInput1" type="text" placeholder="Operator" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Email</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="email" placeholder="name@example.com" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Phone Number</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="0811111145" /></div>
+                                        <div class="form-group"><label for="exampleFormControlInput1">Password</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="password"/></div>
+                                        <div class="form-group"> <label for="exampleFormControlSelect1">Type</label><select class="form-control form-control-sm" id="typeUser">
+                                            <option>Admin</option>
+                                            <option>Operator</option>
+                                        </select></div>
+                                        <a class="btn btn-success btn-sm" type="button" href="/users"  >Add User</a>
+
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; CGX 2020</div>
+    
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    </body>
+</html>

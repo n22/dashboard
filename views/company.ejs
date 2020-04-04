@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body class="nav-fixed">
+        <%- include('partials/nav-head') %>
+        <div id="layoutSidenav">
+            <%- include('partials/sidenav') %>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="page-header pb-10">
+                        <div class="container-fluid">
+                            <div class="page-header-content">
+                                <h1 class="page-header-title">
+                                    <div class="page-header-icon"><i data-feather="users"></i></div>
+                                    <span>Perusahaan</span>
+                                </h1>
+                                <!-- <div class="page-header-subtitle">Data perusahaan mitra atau pelanggan</div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-n10">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div id="sizing">
+                                    <div class="card mb-4">
+                                        <div class="card-header">Data Perusahaan</div>
+                                        <div class="card-body">
+                                            <div class="position-relative">
+                                                <div class="row align-items-center justify-content-between">
+                                                    <div class="col position-relative">
+                                                        <p class="text-gray-700">Nama Perusahaan:CGX.</p>
+                                                        <p class="text-gray-700">Alamat: Bekasi no.3.</p>
+                                                        <p class="text-gray-700">Telepon Perusahaan: 021-4891118.</p>
+                                                        <p class="text-gray-700">Nama PIC: Bambang</p>
+                                                        <p class="text-gray-700">Email Perusahaan: bambang@cgx.co.id.</p>
+                                                        <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
+                                                        <!-- <a class="btn btn-teal btn-sm" href="company-edit.html">Edit data perusahaan<i class="ml-1" data-feather="arrow-right"></i></a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="status">
+                                    <div class="card mb-4">
+                                        <div class="card-header">Kunci API </div>
+                                        <div class="card-body">
+                                            <div class="datatable table-responsive">
+                                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Name</th>
+                                                            <th>Kunci API</th>
+                                                            <th>Edit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Ecommerce<br>
+                                                            <b>ID:</b>5e8485f03d9b184119af6421
+                                                            
+                                                            </td>
+                                                            <td> <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter">  <i data-feather="eye"></i></button>
+                                                             </td>
+                                                            <td>
+                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                            </td>
+                                                        </tr>                                                   
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- list kunci API -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalCenterTitle">Kunci API</h5>
+                                            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                        </div>
+                                        <div class="modal-body">                               
+                                           
+                                         </div>
+                                        <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="nav-sticky">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <ul class="nav flex-column" id="stickyNav">
+                                                <li class="nav-item"><a class="nav-link" href="/company-edit">Edit Data Perusahaan</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="company-create-api.html">Tambah Kunci API</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; CGX 2020</div>
+    
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    </body>
+</html>

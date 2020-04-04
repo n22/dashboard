@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <body class="nav-fixed">
+        <%- include('partials/nav-head') %>
+        <div id="layoutSidenav">
+            <%- include('partials/sidenav') %>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid mt-5">
+                        <div class="d-flex justify-content-between align-items-sm-center flex-column flex-sm-row mb-4">
+                            <div class="mr-4 mb-3 mb-sm-0">
+                                <h1 class="mb-0">Pengiriman</h1>
+                            </div>
+                            <div class="dropdown">
+                                <a class="btn btn-primary lift btn-sm" href="/delivery-add"><i data-feather="plus"></i>Tambah Pengiriman</a>
+                            </div>
+                          
+                        </div>
+
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="datatable table-responsive">
+                                    <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                        <thead>
+                                            <tr>
+                                                <th>Airway Bill</th>
+                                                <th>Perusahaan</th>
+                                                <th>Barang</th>
+                                                <th>Jenis</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cegeex</td>
+                                                <td>jalan wibawa mukti jakarta</td>
+                                                <td>0214721213</td>
+                                                <td>wahyu</td>
+                                                <td><div class="badge badge-primary badge-pill">Full-time</div></td>
+                                                <td>
+                                                    <a class="btn btn-datatable btn-icon btn-transparent-dark mr-2" href="/delivery"><i data-feather="settings"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; CGX 2020</div>
+    
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    </body>
+</html>

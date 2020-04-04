@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+    <style>
+        ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+
+    </style>
+    <body class="nav-fixed">
+        <%- include('partials/nav-head') %>
+        <div id="layoutSidenav">
+            <%- include('partials/sidenav') %>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="page-header pb-10">
+                        <div class="container-fluid">
+                            <div class="page-header-content">
+                                <h1 class="page-header-title">
+                                    <div class="page-header-icon"><i data-feather="users"></i></div>
+                                    <span>#{Nomer Airway Bill} <span class="badge badge-primary">Primary</span></span>
+                                </h1>
+                                <div class="page-header-subtitle">#{Nama Pelanggan}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-n10">
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div id="sizing">
+                                    <div class="card mb-4">
+                                        <div class="card-header">Data Penerima</div>
+                                        <div class="card-body">
+                                            <div class="position-relative">
+                                                <div class="row align-items-center justify-content-between">
+                                                    <div class="col position-relative">
+                                                        <p class="text-gray-700">Nama Penerima:CGX.</p>
+                                                        <p class="text-gray-700">Alamat: Bekasi no.3.</p>
+                                                        <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
+                                                        <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
+                                                        <!-- <a class="btn btn-teal btn-sm" href="company-edit.html">Edit data perusahaan<i class="ml-1" data-feather="arrow-right"></i></a> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="status">
+                                    <div class="card mb-4">
+                                        <div class="card-header">Barang yang dikirim </div>
+                                        <div class="card-body">
+                                            <div class="sbp-preview mb-4">
+                                                <div class="sbp-preview-content">
+                                                <p class="text-gray-700">Nama Penerima:CGX.</p>
+                                                <p class="text-gray-700">Alamat: Bekasi no.3.</p>
+                                                <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
+                                                <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
+                                                    <div class="datatable table-responsive">
+                                                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nama produk</th>
+                                                                    <th>Deskripsi produk</th>
+                                                                    <th>Jumlah</th>
+                                                                    <th>Aksi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Sutra
+                                                                    </td>
+                                                                    <td> 
+                                                                        warna beige
+                                                                    </td>
+                                                                    <td>
+                                                                        1 rol
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                    </td>
+                                                                </tr>                                                   
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="sbp-preview mb-4">
+                                                <div class="sbp-preview-content">
+                                                <p class="text-gray-700">Nama Penerima:CGX.</p>
+                                                <p class="text-gray-700">Alamat: Bekasi no.3.</p>
+                                                <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
+                                                <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
+                                                    <div class="datatable table-responsive">
+                                                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Nama produk</th>
+                                                                    <th>Deskripsi produk</th>
+                                                                    <th>Jumlah</th>
+                                                                    <th>Aksi</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Sutra
+                                                                    </td>
+                                                                    <td> 
+                                                                        warna beige
+                                                                    </td>
+                                                                    <td>
+                                                                        1 rol
+                                                                    </td>
+                                                                    <td>
+                                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                    </td>
+                                                                </tr>                                                   
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="nav-sticky">
+                                    <div class="card mb-4">
+                                        <div class="card-body">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item"><a class="nav-link" href="/delivery-edit">Edit Data Pengiriman</a></li>
+                                                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Update status Pengiriman</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div>
+                                                    <h4>Status</h4>
+                                                    <ul class="timeline">
+                                                        <li>
+                                                            <p>4 April 2020</br>
+                                
+                                                            Driver already pickup the item from seller</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>3 April 2020</br>
+                                
+                                                            Courier assign</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>1 April 2020</br>
+                
+                                                            Order received</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="footer mt-auto footer-light">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 small">Copyright &copy; CGX 2020</div>
+    
+                        </div>
+                    </div>
+                </footer>
+                <!-- modal update status -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Update status pengiriman</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group"><label for="exampleFormControlInput1">Status</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Asep" /></div>
+                            <div class="form-group"><label for="exampleFormControlInput1">Keterangan </label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Jl.Sukabumi no 3, Sukabumi" /></div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+    </body>
+</html>
