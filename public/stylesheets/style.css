@@ -6784,7 +6784,7 @@ input[type=button].btn-block {
 .card-header {
   padding: 1rem 1.35rem;
   margin-bottom: 0;
-  background-color: rgba(31, 45, 65, 0.03);
+  background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(31, 45, 65, 0.125);
 }
 .card-header:first-child {
@@ -19742,7 +19742,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .page-header.page-header-dark .breadcrumb {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgb(255, 255, 255);
   box-shadow: 0 0.15rem 1.75rem 0 rgba(31, 45, 65, 0.15);
 }
 .page-header.page-header-dark .breadcrumb .breadcrumb-item,
@@ -19763,7 +19763,7 @@ body {
   color: rgba(31, 45, 65, 0.5);
 }
 .page-header.page-header-light .breadcrumb {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
 }
 .page-header.page-header-light .breadcrumb .breadcrumb-item,
 .page-header.page-header-light .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
