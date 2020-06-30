@@ -32,7 +32,15 @@ ul.timeline > li:before {
     height: 20px;
     z-index: 400;
 }
-
+    .info >p{
+    margin-bottom: 0.2rem;
+}
+.judul{
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgba(31, 45, 65, 0.125);
+}
 
     </style>
     <body class="nav-fixed">
@@ -41,154 +49,295 @@ ul.timeline > li:before {
             <%- include('partials/sidenav') %>
             <div id="layoutSidenav_content">
                 <main>
-                    <div class="page-header pb-10">
-                        <div class="container-fluid">
-                            <div class="page-header-content">
-                                <h1 class="page-header-title">
-                                    <div class="page-header-icon"><i data-feather="users"></i></div>
-                                    <span>#{Nomer Airway Bill} <span class="badge badge-primary">Primary</span></span>
-                                </h1>
-                                <div class="page-header-subtitle">#{Nama Pelanggan}</div>
+                    <div class="page-header pb-4">
+                        <div class="page-header page-header-light bg-white">
+                            <div class="container-fluid">
+                                <div class="page-header-content py-2">
+                                    <div class="page-header-title" style="font-size:1rem;">
+                                        <ol class="breadcrumb mt-1 mb-0">
+                                            <li class="breadcrumb-item"><a href="index.html" style="color:black;">Order</a></li>
+                                            <li class="breadcrumb-item active">#{no order}</li>
+                                        </ol>
+                                    </div>
+                                   
+                                   
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="container-fluid mt-n10">
+                    <div class="container-fluid mt-4">
                         <div class="row">
                             <div class="col-lg-9">
                                 <div id="sizing">
                                     <div class="card mb-4">
-                                        <div class="card-header">Data Penerima</div>
+                                        <div class="card-header" style="color:black;">Order #12</div>
                                         <div class="card-body">
                                             <div class="position-relative">
                                                 <div class="row align-items-center justify-content-between">
-                                                    <div class="col position-relative">
-                                                        <p class="text-gray-700">Nama Penerima:CGX.</p>
-                                                        <p class="text-gray-700">Alamat: Bekasi no.3.</p>
-                                                        <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
-                                                        <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
-                                                        <!-- <a class="btn btn-teal btn-sm" href="company-edit.html">Edit data perusahaan<i class="ml-1" data-feather="arrow-right"></i></a> -->
+                                                    <div class="col position-relative ">
+                                                       <div class="row mb-3">
+                                                            <div class="col-4 info" >
+                                                               <p >
+                                                                Airway bill
+                                                               </p >
+                                                               <p style="color:black;" class="font-weight-bold" >
+                                                                   <h1>
+                                                                    123456
+                                                                   </h1>
+                                                               </p>
+                                                            </div>
+                                                            <div class="col-4 info"> 
+                                                                <p >
+                                                                    Nama perusahaan
+                                                                   </p>
+                                                                   <p style="font-weight: 500;color: black;">
+                                                                       Sampingan
+                                                                   </p>
+                                                            </div>
+                                                            <div class="col-4 info"> 
+                                                                <p >
+                                                                    Tanggal Pengiriman
+                                                                   </p>
+                                                                   <p style="font-weight: 500;color: black;">
+                                                                      <span class="text-grey-500">
+                                                                          Express
+                                                                      </span>
+                                                                      <br>
+                                                                    Monday,4 July 2020
+                                                                   </p>
+                                                            </div>
+
+                                                       </div>
+                                                       <div class="row mb-3">
+                                                        <div class="col-4 info">
+                                                            <p >
+                                                                Nama Penerima
+                                                                </p >
+                                                                <p style="color:black;" class="font-weight-bold" >
+                                                                    Bruno Pamungkas
+                                                                </p>
+                                                                <p style="color:black;">
+                                                                    0811982222
+                                                                </p>
+                                                         </div>
+                                                        <div class="col-8 info" >
+                                                            <p >
+                                                            Alamat
+                                                            </p >
+                                                            <p style="color:black;" class="font-weight-bold" >
+                                                                Jalan Wibawa mukti no.45, Bekasi, Jawa Barat, 14220
+                                                            </p>
+                                                            <p style="color:black;">
+                                                                Pagar hitam
+                                                            </p>
+                                                         </div>
+                                                        
+
+                                                       </div>
+                                                       
                                                     </div>
                                                 </div>
+                                               
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div id="status">
-                                    <div class="card mb-4">
-                                        <div class="card-header">Barang yang dikirim </div>
+                                        <div class="card-header" style="color:black;">Pengambilan</div>
                                         <div class="card-body">
-                                            <div class="sbp-preview mb-4">
-                                                <div class="sbp-preview-content">
-                                                <p class="text-gray-700">Nama Penerima:CGX.</p>
-                                                <p class="text-gray-700">Alamat: Bekasi no.3.</p>
-                                                <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
-                                                <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
-                                                    <div class="datatable table-responsive">
-                                                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Nama produk</th>
-                                                                    <th>Deskripsi produk</th>
-                                                                    <th>Jumlah</th>
-                                                                    <th>Aksi</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Sutra
-                                                                    </td>
-                                                                    <td> 
-                                                                        warna beige
-                                                                    </td>
-                                                                    <td>
-                                                                        1 rol
-                                                                    </td>
-                                                                    <td>
-                                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                    </td>
-                                                                </tr>                                                   
-                                                            </tbody>
-                                                        </table>
+                                           <div class= "col-lg-12 p-4 mb-4" style="background-color:#e9edf3;">
+                                                <div class="position-relative">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col position-relative ">
+                                                        <div class="row mb-3">
+                                                            <div class="col-4 info">
+                                                                <p >
+                                                                    Nama Penerima
+                                                                    </p >
+                                                                    <p style="color:black;" class="font-weight-bold" >
+                                                                        Bambang Fernandes
+                                                                    </p>
+                                                                    <p style="color:black;">
+                                                                        0811982222
+                                                                    </p>
+                                                            </div>
+                                                            <div class="col-8 info" >
+                                                                <p >
+                                                                Alamat
+                                                                </p >
+                                                                <p style="color:black;" class="font-weight-bold" >
+                                                                    Jalan Wibawa mukti no.45, Bekasi, Jawa Barat, 14220
+                                                                </p>
+                                                                <p style="color:black;">
+                                                                    Pagar hitam
+                                                                </p>
+                                                            </div>
+                                                            <div class="datatable table-responsive mt-4">
+                                                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Nama produk</th>
+                                                                            <th>Deskripsi produk</th>
+                                                                            <th>Jumlah</th>
+                                                                            <th>Aksi</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Sutra
+                                                                            </td>
+                                                                            <td> 
+                                                                                warna beige
+                                                                            </td>
+                                                                            <td>
+                                                                                1 rol
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                            </td>
+                                                                        </tr> 
+                                                                        <tr>
+                                                                            <td>Combat 40
+                                                                            </td>
+                                                                            <td> 
+                                                                                warna beige
+                                                                            </td>
+                                                                            <td>
+                                                                                1 rol
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                            </td>
+                                                                        </tr>                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                        
+                                                        </div>
                                                     </div>
+                                                
                                                 </div>
                                             </div>
-                                            <div class="sbp-preview mb-4">
-                                                <div class="sbp-preview-content">
-                                                <p class="text-gray-700">Nama Penerima:CGX.</p>
-                                                <p class="text-gray-700">Alamat: Bekasi no.3.</p>
-                                                <p class="text-gray-700">Detail lokasi: 021-4891118.</p>
-                                                <p class="text-gray-700">Telepon PIC: 021-4891118.</p>
-                                                    <div class="datatable table-responsive">
-                                                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>Nama produk</th>
-                                                                    <th>Deskripsi produk</th>
-                                                                    <th>Jumlah</th>
-                                                                    <th>Aksi</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Sutra
-                                                                    </td>
-                                                                    <td> 
-                                                                        warna beige
-                                                                    </td>
-                                                                    <td>
-                                                                        1 rol
-                                                                    </td>
-                                                                    <td>
-                                                                        <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                    </td>
-                                                                </tr>                                                   
-                                                            </tbody>
-                                                        </table>
+                                            <div class= "col-lg-12 p-4" style="background-color:#e9edf3;">
+                                                <div class="position-relative">
+                                                    <div class="row align-items-center justify-content-between">
+                                                        <div class="col position-relative ">
+                                                        <div class="row mb-3">
+                                                            <div class="col-4 info">
+                                                                <p >
+                                                                    Nama Penerima
+                                                                    </p >
+                                                                    <p style="color:black;" class="font-weight-bold" >
+                                                                        Bambang Fernandes
+                                                                    </p>
+                                                                    <p style="color:black;">
+                                                                        0811982222
+                                                                    </p>
+                                                            </div>
+                                                            <div class="col-8 info" >
+                                                                <p >
+                                                                Alamat
+                                                                </p >
+                                                                <p style="color:black;" class="font-weight-bold" >
+                                                                    Jalan Wibawa mukti no.45, Bekasi, Jawa Barat, 14220
+                                                                </p>
+                                                                <p style="color:black;">
+                                                                    Pagar hitam
+                                                                </p>
+                                                            </div>
+                                                            <div class="datatable table-responsive mt-4">
+                                                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Nama produk</th>
+                                                                            <th>Deskripsi produk</th>
+                                                                            <th>Jumlah</th>
+                                                                            <th>Aksi</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>Sutra
+                                                                            </td>
+                                                                            <td> 
+                                                                                warna beige
+                                                                            </td>
+                                                                            <td>
+                                                                                1 rol
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                            </td>
+                                                                        </tr> 
+                                                                        <tr>
+                                                                            <td>Combat 40
+                                                                            </td>
+                                                                            <td> 
+                                                                                warna beige
+                                                                            </td>
+                                                                            <td>
+                                                                                1 rol
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
+                                                                            </td>
+                                                                        </tr>                                                        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            
+
+                                                        </div>
+                                                        
+                                                        </div>
                                                     </div>
+                                                
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="card-header" style="color:black;">Notes</div>
+                                        <div class="card-body">
+                                            
+                                            
+                                                    <div class="row">
+                                                        <div>
+                                                            <ul class="timeline">
+                                                                <li>
+                                                                    <p>4 April 2020</br>
+                                        
+                                                                    Driver already pickup the item from seller</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>3 April 2020</br>
+                                        
+                                                                    Courier assign</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>1 April 2020</br>
+                        
+                                                                    Order received</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                
+                                           
+                                        </div>
                                     </div>
                                 </div>
+                              
                             </div>
                             <div class="col-lg-3">
                                 <div class="nav-sticky">
                                     <div class="card mb-4">
                                         <div class="card-body">
                                             <ul class="nav flex-column">
-                                                <li class="nav-item"><a class="nav-link" href="/delivery-edit">Edit Data Pengiriman</a></li>
-                                                <li class="nav-item"><a class="nav-link" href="/delivery-edit">Print to PDF</a></li>
-
+                                                <li class="nav-item"><a class="nav-link" href="/delivery-add">Edit Data Pengiriman</a></li>
                                                 <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">Update status Pengiriman</a></li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div>
-                                                    <h4>Status</h4>
-                                                    <ul class="timeline">
-                                                        <li>
-                                                            <p>4 April 2020</br>
-                                
-                                                            Driver already pickup the item from seller</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>3 April 2020</br>
-                                
-                                                            Courier assign</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>1 April 2020</br>
-                
-                                                            Order received</p>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                   
                                 </div>
                             </div>
                         </div>
