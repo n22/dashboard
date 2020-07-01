@@ -26,130 +26,211 @@
                             <div class="card-header" style="color:black;">Order info</div>
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group"><label for="exampleFormControlInput1">Airwaybill</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group"><label for="exampleFormControlInput1">Airwaybill</label><input class="form-control "  type="name" placeholder="Generate by system" disabled="" /></div>
 
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group"><label for="exampleFormControlInput1">Nama Pengirim</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
+                                    <div class="col-md-4">
+                                        <div class="form-group"><label for="exampleFormControlInput1">Perusahaan Pengirim</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
 
                                     </div>
-                                </div>
-                                <h4 class="mb-3 mt-3">Drop-off</h4>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group"><label for="exampleFormControlInput1">Nama Penerima</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group"><label for="exampleFormControlInput1">No telp</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
-                                    </div>
-
-                                </div>
-                                <div class="form-group"><label for="exampleFormControlInput1">Alamat</label><input class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" /></div>
-                                <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi/Catatan</label> <textarea class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" rows="3"></textarea></div>
-                                <!-- sadasd -->
-                                <div class="row" style="align-items:center;">
-                                    <div class="col-md-6"> <h4 class="mb-3 mt-4">Pick-up</h4></div>
-                                    <div class="col-md-6"> <button class="btn btn-green rounded-pill my-1 btn-sm float-right">+ pickup point</button></div>
-                                 </div>
-                                 <ul class="list-group mb-3">
-                                    <li class="list-group-item d-flex justify-content-between lh-condensed" style="background-color: #e3e7ee;">
-                                      <div class="row">
-                                        <div class="col-6">
-                                            <div class="form-row">
-                                                <div class="col-6">
-                                                    <div class="form-group"><label for="exampleFormControlInput1">Nama</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="form-group"><label for="exampleFormControlInput1">Nama PIC</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0888811" /></div>
-                                                </div>
-                                                
-                                               
-                                            </div>
-                                            <div class="form-row">
-                                        
-                                                <div class="col-6">
-                                                    <div class="form-group"><label for="exampleFormControlInput1">No Telp</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0811982345" /></div>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div class="form-group"><label for="exampleFormControlInput1">Jam Pickup</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0811982345" /></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="col-12">                                
-                                                    <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi/Catatan</label> <textarea class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" rows="3"></textarea></div>
-                                                </div>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="col-12">                                
-                                                    <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi/Catatan</label> <textarea class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" rows="3"></textarea></div>
-                                                </div>
-                                            </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="exampleFormControlSelect1">Layanan</label><select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Same day</option>
+                                                <option>Regular</option>
+                                                <option>SuperSDS</option>
+                                            
+                                            </select>
                                         </div>
-                                        <div class="col-6"> 
-                                            <div class="row mt-4" style="align-items:center;">
-                                                <div class="col-md-6"> <h6 class="mb-3 mt-4">Item(s)</h6></div>
-                                                <div class="col-md-6"> <button class="btn btn-green rounded-pill my-1 btn-sm float-right">+ item</button></div>
-                                             </div>
-                                             <ul class="list-group mb-3">
-                                                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                                  <div>
-                                                    <div class="form-row">
-                                                        <div class="col-3">
-                                                            <div class="form-group"><label for="exampleFormControlInput1">Produk</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Asep" /></div>
-                                                        </div>
-                                                        <div class="col-4">
-                                                            <div class="form-group"><label for="exampleFormControlInput1">Deskripsi</label><textarea class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Asep" rows="3" ></textarea> </div>
-                                                        </div>
-                                                        <div class="col-2">
-                                                            <div class="form-group"><label for="exampleFormControlInput1">Unit</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Asep" /></div>
-                                                        </div>
-                                                        <div class="col-3">
-                                                            <div class="form-group"><label for="exampleFormControlInput1">Satuan</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Asep" /></div>
-                                                        </div>
-                                                       
-            
-                                                    </div>
-                                                  </div>
-                                                  <button class="btn  btn-outline-red btn-icon btn-xs" type="button">
-                                                    <i class="fas fa-trash"></i>
-                                                </button>
-                                                </li>
-                                                <li class="list-group-item d-flex justify-content-between lh-condensed">
-                                                    <div>
-                                                      <div class="form-row">
-                                                          <div class="col-3">
-                                                              <div class="form-group"><label for="exampleFormControlInput1">Produk</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="katun" /></div>
-                                                          </div>
-                                                          <div class="col-4">
-                                                              <div class="form-group"><label for="exampleFormControlInput1">Deskripsi</label><textarea class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="warna hitam" rows="3" ></textarea> </div>
-                                                          </div>
-                                                          <div class="col-2">
-                                                              <div class="form-group "><label for="exampleFormControlInput1">Unit</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="5" /></div>
-                                                          </div>
-                                                          <div class="col-3">
-                                                              <div class="form-group"><label for="exampleFormControlInput1">Satuan</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Meter" /></div>
-                                                          </div>
-              
-                                                      </div>
-                                                    </div>
-                                                    <button class="btn  btn-outline-red btn-icon btn-xs" type="button">
+                                    </div>
+                                </div>
+                                <section id="pickup">
+                                    <!-- judul pickup-->
+                                    <div class="row mb-3 mt-3">
+                                        <div class="col-6"> <h4>Pengambilan</h4></div>
+                                        <div class="col-6"> <button class="btn btn-green rounded-pill  btn-sm float-right">+ pickup point</button></div>
+                                    </div>
+                                    <!-- /judul bagian pickup -->
+                                    <!-- isi -->
+                                    <div class="mb-3">
+                                        <!-- card items -->
+                                        <div class="list-group-item  mb-4" style="background-color: #e3e7ee;">
+                                            <!-- tombol hapus -->
+                                            <div class="row ">
+                                                <div class="col-12">
+                                                    <button class="btn  btn-outline-red btn-icon btn-xs float-right" type="button">
                                                         <i class="fas fa-times"></i>
                                                     </button>
-                                                </li>
-                                            </ul>
+                                                </div>
+                                            </div>
+                                            <!-- /tombol hapus -->
+                                            <div class="row">
+                                                <!-- pickup point -->
+                                                <div class="col-md-6">
+                                                    <div class="form-row">
+                                                        <div class="col-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Nama</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Toko/Gedung" /></div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">PIC</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Yang dapat dihubungi" /></div>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+                                                    <div class="form-row">
+                                                
+                                                        <div class="col-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Telp</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="0811982345" /></div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Jam Pickup</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="0811982345" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        
+                                                            <div class="col-md-12">
+                                                                <div class="form-group"><label for="exampleFormControlInput1">Alamat</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Alamat RT/RW" /></div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Kecamatan</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Rawamangun" /></div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Kelurahan</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Pulogadung" /></div>
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Kota</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="Jakarta Timur" /></div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Provinsi</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="DKI Jakarta" /></div>
+                                                        </div>
+                                                        
+
+                                                    </div>
+                                                    <div class="form-row">
+                                                        
+                                                        <div class="col-md-12">
+                                                            <div class="form-group"><label for="exampleFormControlInput1">ZIP</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="name" placeholder="13220" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-row">
+                                                        <div class="col-12">                                
+                                                            <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi/Catatan</label> <textarea class="form-control form-control-sm" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" rows="3"></textarea></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /pickup point -->
+
+                                                <!-- item details -->
+                                                <div class="col-md-6"> 
+                                                    <div class="row mt-3 mb-3">
+                                                        <div class="col-6"> <h6>Item(s)</h6></div>
+                                                        <div class="col-6"> <button class="btn btn-green rounded-pill btn-sm float-right">+ item</button></div>
+                                                    </div>
+                                                    <!-- list items -->
+                                                    <ul class="list-group mb-3">
+                                                        <!-- detail item -->
+                                                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                                                        <div>
+                                                            <div class="row">
+                                                                <div class="col-12">
+                                                                    <button class="btn  btn-outline-red float-right btn-icon btn-xs" type="button">
+                                                                        <i class="fas fa-times"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col-5">
+                                                                    <div class="form-group"><label for="exampleFormControlInput1">Nama</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Nama Produk" /></div>
+                                                                </div>
+                                                                
+                                                                <div class="col-3">
+                                                                    <div class="form-group"><label for="exampleFormControlInput1">Unit</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="1" /></div>
+                                                                </div>
+                                                                <div class="col-4">
+                                                                    <div class="form-group"><label for="exampleFormControlInput1">Satuan</label><input class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="KG" /></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-row">
+                                                                <div class="col-12">
+                                                                        <div class="form-group"><label for="exampleFormControlInput1">Deskripsi</label><textarea class="form-control form-control-sm" id="exampleFormControlInput1" type="phone" placeholder="Deskripsi barang, warna, jenis" rows="3" ></textarea> </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- <button class="btn  btn-outline-red btn-icon btn-xs" type="button">
+                                                            <i class="fas fa-times"></i>
+                                                        </button> -->
+                                                        </li>
+                                                        <!-- ./detail item -->
+                                                    </ul>
+                                                    <!-- ./list items -->
+                                                </div>
+                                                <!-- /.item details -->
+                                            </div>
                                         </div>
-                                      </div>
-                                      <button class="btn  btn-outline-red  btn-icon btn-xs" type="button">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                    </li>
-                                </ul>
-                                <div class="row mt-2  mb-2 mr-1" >
-                                    <div class="col-12">
-                                        <button class="btn btn-green rounded-pill my-1 btn-sm float-right">+ pickup point</button>                                    </div>
+                                        <!-- ./card items -->
+                                        
+                                        
                                     </div>
-                                <div class="row">
+                                    <!-- /isi -->
+                                    <div class="row mt-2  mb-2 mr-1" >
+                                        <div class="col-12">
+                                            <button class="btn btn-green rounded-pill my-1 btn-sm float-right">+ pickup point</button>       
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!-- section penerima -->
+                                <section id="receiver"> 
+                                    <h4 class="mb-3 mt-3">Penerima</h4>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Nama</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="Reyhan" /></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group"><label for="exampleFormControlInput1">No telp</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="0811982344" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Alamat</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="Alamat RT/RW" /></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Kecamatan</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="Rawamangun" /></div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Kelurahan</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="Pulogadung" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Kota</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="Jakarta Timur" /></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Provinsi</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="DKI Jakarta" /></div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Zip</label><input class="form-control" id="exampleFormControlInput1" type="name" placeholder="13220" /></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group"><label for="exampleFormControlInput1">Detail lokasi/Catatan</label> <textarea class="form-control" id="exampleFormControlInput1" type="text" placeholder="Nama Perusahaan Pengirim" rows="3"></textarea></div>
+
+                                        </div>
+                                    </div>   
+                                </section>                         
+                            <!--  create order button -->
+                                <div class="row mt-4">
                                     <button class="btn btn-primary rounded-pill px-4">Buat Order</button>  
                                 </div>
                             </div>
