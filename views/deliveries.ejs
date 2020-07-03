@@ -25,23 +25,56 @@
                                     <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                                         <thead>
                                             <tr>
-                                                <th>Airway Bill</th>
-                                                <th>Perusahaan</th>
-                                                <th>Barang</th>
-                                                <th>Jenis</th>
+                                                <th>No AWB</th>
+                                                <th>Klien</th>
+                                                <th>Tujuan</th>
+                                                <th>Preview Item</th>
+                                                <th>Waktu diterima</th>
                                                 <th>Status</th>
-                                                <th>Actions</th>
+                                                <th>Action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Cegeex</td>
-                                                <td>jalan wibawa mukti jakarta</td>
-                                                <td>0214721213</td>
-                                                <td>wahyu</td>
-                                                <td><div class="badge badge-primary badge-pill">Full-time</div></td>
+                                                <td>TR-000001</td>
+                                                <td>WIF</td>
+                                                
+                                                <td><b>Sejahtera Abadi </b><br>
+                                                    Jln. Tanah abang 5
+
+                                                </td>
+                                                <td> Kain katun</td>
+                                                <td>
+                                                   
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-primary badge-pill">Full-time</div>
+                                                </td>
                                                 <td>
                                                     <a class="btn btn-datatable btn-icon btn-transparent-dark mr-2" href="/delivery"><i data-feather="settings"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>TR-000001</td>
+                                                <td>WIF</td>
+                                                
+                                                <td><b>Sejahtera Abadi </b>
+                                                    <p class="text-truncate text-break" style="max-width: 150px;">
+                                                        Jln. Tanah abang 5
+                                                    </p>
+                                                   
+
+                                                </td>
+                                                <td><button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#staticBackdrop">Detail barang</button>
+                                                </td>
+                                                <td>
+                                                </td>
+                                                <td>
+                                                    <div class="badge badge-primary badge-pill">Full-time</div>
+                                                </td>
+                                                <td>
+                                                    <!-- <a class="btn btn-datatable btn-icon btn-transparent-dark mr-2" href="/delivery"><i data-feather="settings"></i></a> -->
+                                                    <button class="btn btn-sm btn-outline-primary" type="button">view</button>
                                                 </td>
                                             </tr>
                                         </tbody>
@@ -50,6 +83,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </main>
                 <footer class="footer mt-auto footer-light">
                     <div class="container-fluid">
@@ -59,6 +93,54 @@
                         </div>
                     </div>
                 </footer>
+            </div>
+        </div>
+        <!-- modal detail barang -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Static Backdrop Modal</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    </div>
+                    <div class="modal-body"><div class="datatable table-responsive mt-4">
+                        <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th>Nama produk</th>
+                                    <th>Deskripsi produk</th>
+                                    <th>Jumlah</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Sutra
+                                    </td>
+                                    <td> 
+                                        warna beige
+                                    </td>
+                                    <td>
+                                        1 rol
+                                    </td>
+                                   
+                                </tr> 
+                                <tr>
+                                    <td>Combat 40
+                                    </td>
+                                    <td> 
+                                        warna beige
+                                    </td>
+                                    <td>
+                                        1 rol
+                                    </td>
+                                   
+                                </tr>                                                        
+                            </tbody>
+                        </table>
+                    </div></div>
+                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button></div>
+                </div>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>

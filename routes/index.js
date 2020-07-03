@@ -44,6 +44,21 @@ router.get('/delivery-edit', function(req, res, next) {
 router.get('/delivery', function(req, res, next) {
   res.render('delivery', { title: 'Express' });
 });
+router.get('/delivery-confirmed', function(req, res, next) {
+  res.render('delivery-confirmed', { title: 'Express' });
+});
+router.get('/delivery-picking', function(req, res, next) {
+  res.render('delivery-picking', { title: 'Express' });
+});
+router.get('/delivery-finish', function(req, res, next) {
+  res.render('delivery-finish', { title: 'Express' });
+});
+router.get('/delivery-delivering', function(req, res, next) {
+  res.render('delivery-delivering', { title: 'Express' });
+});
+router.get('/delivery-cancel', function(req, res, next) {
+  res.render('delivery-cancel', { title: 'Express' });
+});
 
 
 module.exports = router;

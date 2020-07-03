@@ -41,8 +41,6 @@ ul.timeline > li:before {
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid rgba(31, 45, 65, 0.125);
 }
-
-
 .progressbar {
       counter-reset: step;
   }
@@ -75,6 +73,7 @@ ul.timeline > li:before {
       content: '';
       position: absolute;
       background-color: #7d7d7d;
+      top: 15px;
       left: -50%;
       z-index: -1;
   }
@@ -121,29 +120,25 @@ ul.timeline > li:before {
                             <div class="container-fluid">
                                 <div class="page-header-content py-2">
                                     <div class="page-header-title" style="font-size:1rem;">
-                                        
-                                                <ol class="breadcrumb mt-1 mb-0">
-                                                    <li class="breadcrumb-item"><a href="index.html" style="color:black;">Order</a></li>
-                                                    <li class="breadcrumb-item active">#{no order}</li>
-                                                </ol>
-                                      
-                                                 
-
-                                            
-
+                                        <ol class="breadcrumb mt-1 mb-0">
+                                            <li class="breadcrumb-item"><a href="index.html" style="color:black;">Order</a></li>
+                                            <li class="breadcrumb-item active">#{no order}</li>
+                                        </ol>
                                     </div>
-                                    <div class="page-header-subtitle">
-                                        <button class="btn btn-primary btn-sm" type="button" data-toggle="modal" data-target="#delivery">Edit</button>
-
-                                     </div>
-
                                    
                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <%- include('partials/progressbar') %>
+                    <div class="container-fluid mb-4">
+                        <ul class="progressbar">
+                            <li class="active">Konfirmasi</li>
+                            <li>Pickup</li>
+                            <li>Delivering</li>
+                            <li>Done</li>
+                        </ul>
+                    </div>
                     <div class="container-fluid mt-4">
                         <div class="row">
                             <div class="col-lg-12">
@@ -153,19 +148,18 @@ ul.timeline > li:before {
                                             <div class="col-6">
                                                 Order #12 
                                                 <span class="badge badge-primary text-wrap ml-2">
-                                                    New
+                                                    Confirmed
                                                 </span>
                                             </div>
                                             <div class="col-6">
                                                 <div class="float-right">
-                                                    <button class="btn btn-success btn-sm" type="button" data-toggle="modal" data-target="#konfirmasi">Approved</button>
-                                                <a class="btn btn-red btn-sm" type="button" href="/delivery-cancel">Cancel</a>
+
+                                                <button class="btn btn-red btn-sm" type="button">Cancel</button>
                                                 </div>
                                             </div>
 
                                             
                                         </div>
-                                        
                                         <div class="card-body">
                                             <div class="position-relative">
                                                 <div class="row align-items-center justify-content-between">
@@ -237,84 +231,27 @@ ul.timeline > li:before {
                                         </div>
                                         <div class="card-header" style="color:black;">Pengambilan</div>
                                         <div class="card-body">
-                                           <div class= "col-lg-12 p-4 mb-4" style="background-color:#e9edf3;">
-                                                <div class="position-relative">
-                                                    <div class="row align-items-center justify-content-between">
-                                                        <div class="col position-relative ">
-                                                        <div class="row mb-3">
-                                                            <div class="col-4 info">
-                                                                <p >
-                                                                    Nama Penerima
-                                                                    </p >
-                                                                    <p style="color:black;" class="font-weight-bold" >
-                                                                        Bambang Fernandes
-                                                                    </p>
-                                                                    <p style="color:black;">
-                                                                        0811982222
-                                                                    </p>
-                                                            </div>
-                                                            <div class="col-8 info" >
-                                                                <p >
-                                                                Alamat
-                                                                </p >
-                                                                <p style="color:black;" class="font-weight-bold" >
-                                                                    Jalan Wibawa mukti no.45, Bekasi, Jawa Barat, 14220
-                                                                </p>
-                                                                <p style="color:black;">
-                                                                    Pagar hitam
-                                                                </p>
-                                                            </div>
-                                                            <div class="datatable table-responsive mt-4">
-                                                                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th>Nama produk</th>
-                                                                            <th>Deskripsi produk</th>
-                                                                            <th>Jumlah</th>
-                                                                            <th>Aksi</th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                        <tr>
-                                                                            <td>Sutra
-                                                                            </td>
-                                                                            <td> 
-                                                                                warna beige
-                                                                            </td>
-                                                                            <td>
-                                                                                1 rol
-                                                                            </td>
-                                                                            <td>
-                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                            </td>
-                                                                        </tr> 
-                                                                        <tr>
-                                                                            <td>Combat 40
-                                                                            </td>
-                                                                            <td> 
-                                                                                warna beige
-                                                                            </td>
-                                                                            <td>
-                                                                                1 rol
-                                                                            </td>
-                                                                            <td>
-                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                            </td>
-                                                                        </tr>                                                        
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                            
-
-                                                        </div>
-                                                        
-                                                        </div>
-                                                    </div>
-                                                
-                                                </div>
-                                            </div>
                                             <div class= "col-lg-12 p-4" style="background-color:#e9edf3;">
                                                 <div class="position-relative">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <span class="badge badge-primary text-wrap ml-2">
+                                                               Picking up
+                                                            </span>
+                                                        </div>
+                                                        <div class="col-6 ">
+                                                            <div class="dropdown float-right">
+
+                                                                <button class="btn btn-green btn-sm dropdown-toggle" id="dropdownFadeIn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dispatch</button>
+                                                                <div class="dropdown-menu animated--fade-in" aria-labelledby="dropdownFadeIn">
+                                                                    <a class="dropdown-item" href="javascript:void(0);">Fullfilment center</a>
+                                                                    <a class="dropdown-item" data-toggle="modal" data-target="#pickup">Driver</a>
+                                                                    <a class="dropdown-item" href="javascript:void(0);">Reject</a>
+                                                                </div>
+                                                            </div>      
+                                                        </div>
+                                                    </div>
+
                                                     <div class="row align-items-center justify-content-between">
                                                         <div class="col position-relative ">
                                                         <div class="row mb-3">
@@ -347,7 +284,6 @@ ul.timeline > li:before {
                                                                             <th>Nama produk</th>
                                                                             <th>Deskripsi produk</th>
                                                                             <th>Jumlah</th>
-                                                                            <th>Aksi</th>
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>
@@ -360,9 +296,7 @@ ul.timeline > li:before {
                                                                             <td>
                                                                                 1 rol
                                                                             </td>
-                                                                            <td>
-                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                            </td>
+                                                                           
                                                                         </tr> 
                                                                         <tr>
                                                                             <td>Combat 40
@@ -373,9 +307,7 @@ ul.timeline > li:before {
                                                                             <td>
                                                                                 1 rol
                                                                             </td>
-                                                                            <td>
-                                                                                <button class="btn btn-datatable btn-icon btn-transparent-dark"><i data-feather="trash-2"></i></button>
-                                                                            </td>
+                                                                        
                                                                         </tr>                                                        
                                                                     </tbody>
                                                                 </table>
@@ -390,101 +322,39 @@ ul.timeline > li:before {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="card-header" style="color:black;">Notes</div>
+                                        <div class="card-body">
+                                            
+                                            
+                                                    <div class="row">
+                                                        <div>
+                                                            <ul class="timeline">
+                                                                <li>
+                                                                    <p>4 April 2020</br>
                                         
-<!-- <style>
-    .timelines ul{
-    list-style: none;
-    position: relative;
-    padding: 0;
-}
-.timelines ul:before{
-    content: '';
-    position: absolute;
-    width: 2px;
-    height: 80%;
-    top:0;
-    left: 0;
-    background:black;
-}
-.timelines ul{
-    display: flex; flex-direction: column-reverse; 
-}
-.timelines ul li{
-    padding: 20px 20px;
-}
-.timelines ul li span{
-    color: coral;
-    position: absolute;
-    left: -2rem;
-    font-size: 12px;
-    background-color:#eff3f9;
-    padding: 5px;
-}
-.timelines ul li div{
-    padding: 0 10px;
-}
-.timelines ul > :first-child :before {
-      content: '';
-      height: 0;
-  }
-</style> -->
-                                    </div>
-                                    <!-- <div class="container-fluid timelines">
-                                        <h3>Notes</h3>
-                                        <ul>
-                                            <li>
-                                                <span>
-                                                    20 Maret
-                                                </span>
-                                                <div>
-                                                    <p>
-                                                        
-                                                        asdasdasdsa
-                                                        asdasdsa
-
-                                                    </p>
-                                                    <p>
-                                                        sadasd
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>
-                                                    20 Maret
-                                                </span>
-                                                <div>
-                                                    <p>
-                                                        2
-                                                    </p>
-                                                </div>
+                                                                    Driver already pickup the item from seller</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>3 April 2020</br>
+                                        
+                                                                    Courier assign</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>1 April 2020</br>
+                        
+                                                                    Order received</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
                                                 
-                                            </li>
-                                            <li>
-                                                <span>
-                                                    20 Maret
-                                                </span>
-                                                <div>
-                                                    <p>
-                                                        3
-                                                    </p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span>
-                                                    20 Maret
-                                                </span>
-                                                <div>
-                                                    <p>
-                                                       4
-                                                    </p>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div> -->
+                                           
+                                        </div>
+                                    </div>
                                 </div>
-                             
+                              
                             </div>
-                           
+                            
                         </div>
                     </div>
                 </main>
@@ -497,21 +367,20 @@ ul.timeline > li:before {
                     </div>
                 </footer>
                 <!-- modal konfirmasi -->
-                <div class="modal fade" id="konfirmasi" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal fade" id="pickup" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="staticBackdropLabel">Konfirmasi Order</h5>
+                                <h5 class="modal-title" id="staticBackdropLabel">Assign Driver</h5>
                                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
                             </div>
                             <div class="modal-body">
-                                <h6>
-                                    Masukan Airwaybill
-                                </h6>
-                                <div class="form-group"><label for="exampleFormControlInput1">Airwaybill</label><input class="form-control "  type="name" /></div>
+
+                                <div class="form-group"><label for="exampleFormControlInput1">Driver name</label><input class="form-control "  type="name" /></div>
+                                <div class="form-group"><label for="exampleFormControlInput1">Driver phone</label><input class="form-control "  type="name" /></div>
 
                             </div>
-                            <div class="modal-footer"><button class="btn btn-red btn-sm" type="button" data-dismiss="modal">Close</button> <a class="btn btn-success btn-sm" type="button" href="/delivery-confirmed">Submit</a></div>
+                            <div class="modal-footer"><button class="btn btn-red btn-sm" type="button" data-dismiss="modal">Close</button><button class="btn btn-success btn-sm" type="button">Submit</button></div>
                         </div>
                     </div>
                 </div>
