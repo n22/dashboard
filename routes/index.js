@@ -59,6 +59,16 @@ router.get('/delivery-delivering', function(req, res, next) {
 router.get('/delivery-cancel', function(req, res, next) {
   res.render('delivery-cancel', { title: 'Express' });
 });
+router.get('/401', function(req, res, next) {
+  res.render('401', { title: 'Express' });
+});
+router.get('/404', function(req, res, next) {
+  res.render('404', { title: 'Express' });
+});
+router.get('/500', function(req, res, next) {
+  res.render('500', { title: 'Express' });
+});
+
 
 
 module.exports = router;
