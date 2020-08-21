@@ -59,6 +59,9 @@ router.get('/delivery-delivering', function(req, res, next) {
 router.get('/delivery-cancel', function(req, res, next) {
   res.render('delivery-cancel', { title: 'Express' });
 });
+router.get('/delivery-dispatch', function(req, res, next) {
+  res.render('delivery-dispatch', { title: 'Express' });
+});
 router.get('/401', function(req, res, next) {
   res.render('401', { title: 'Express' });
 });
